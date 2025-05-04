@@ -5,7 +5,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 const page = () => {
   return (
     <main>
-      <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-md max-md:flex-col max-md:w-xl  ${outfit.className}`}>
+      <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-4/5 max-md:flex-col max-md:w-xl  ${outfit.className}`}>
         {/* Resume */}
         <div className="mt-6 mb-6 border-2 p-8 rounded-3xl w-full  bg-white text-black ">
         <p className="text-4xl font-bold">Resume</p>
@@ -70,11 +70,11 @@ const page = () => {
           </div>
           </div>
           {/* Box Skills */}
-        <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-md max-md:flex-col max-md:w-xl ${outfit.className}`}>
+        <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-4/5 max-md:flex-col max-md:w-xl ${outfit.className}`}>
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
           <p className="text-3xl font-bold mb-2">My skills</p>
           <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
-            <div className="flex space-x-1  ">
+            <div className="flex space-x-1 flex-wrap ">
             <Image src='/icon/unity.png' width={48} height={48} alt={"logo-unity"} />
             <Image src='/icon/c-sharp.png' width={48} height={48} alt={"logo-C#"} />
             <Image src='/icon/html.png' width={48} height={48} alt={"logo-html"} />
@@ -86,7 +86,7 @@ const page = () => {
           </div>
         </div>
           {/* Contact */}
-          <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-md max-md:flex-col max-md:w-xl ${outfit.className}`}>
+          <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-4/5 max-md:flex-col max-md:w-xl ${outfit.className}`}>
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
           <p className="text-3xl font-bold mb-2">Contact</p>
           <div className="border-b-[#39FF14] border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
