@@ -1,0 +1,52 @@
+  @import "tailwindcss";
+  @tailwind utilities;
+  
+  @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+
+    /* เพิ่มตัวแปรที่คุณต้องการไว้ตรงนี้เลย */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  } */
+  /* @media (prefers-color-scheme: light) {
+    :root {
+      --background: #ededed;
+      --foreground: #0a0a0a;
+    }
+  } */
+  @layer components {
+    .bg-dot-pattern {
+      background-color: #ffffff;
+      opacity: 1;
+      background-image: radial-gradient(#6259e0 2px, transparent 2px), radial-gradient(#6259e0 2px, #ffffff 2px);
+      background-size: 80px 80px;
+      background-position: 0 0, 40px 40px;
+    }
+  
+    /* เปลี่ยน .dark .bg-dot-pattern-black เป็น .dark .bg-dot-pattern */
+    .dark .bg-dot-pattern {
+      background-color: #000000;
+      opacity: 1;
+      background-image: radial-gradient(#1100ff 2px, transparent 2px), radial-gradient(#f8269a 2px, #000000 2px);
+      background-size: 80px 80px;
+      background-position: 0 0, 40px 40px;
+    }
+  }
+  
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
