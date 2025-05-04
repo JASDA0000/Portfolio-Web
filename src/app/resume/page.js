@@ -74,7 +74,7 @@ const page = () => {
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
           <p className="text-3xl font-bold mb-2">My skills</p>
           <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
-            <div className="flex space-x-1 max-sm:flex-wrap max-sm:mt-1 ">
+            <div className="flex space-y-4 max-sm:flex-wrap max-sm:gap-2 ">
             <Image src='/icon/unity.png' width={48} height={48} alt={"logo-unity"} />
             <Image src='/icon/c-sharp.png' width={48} height={48} alt={"logo-C#"} />
             <Image src='/icon/html.png' width={48} height={48} alt={"logo-html"} />
