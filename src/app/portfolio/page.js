@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../../components/Navbar'
 import Image from 'next/image'
-import LinkButton from '../../../components/LinkButton'
+import LinkButton from '../../../components/Linkbutton'
 
 const page = () => {
   return (
