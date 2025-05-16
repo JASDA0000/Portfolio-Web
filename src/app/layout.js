@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       <body
-        className={`${anuphan.className} ${outfit.className} antialiased bg`}
+        className={`${anuphan.className} ${outfit.className} antialiased min-h-screen flex flex-col`}
       >
         <div className="min-h-screen bg-dot-pattern dark:[bg-dot-pattern]">
         <Navbar />

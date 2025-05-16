@@ -6,8 +6,9 @@ import LinkButton from '../../../components/LinkButton'
 const page = () => {
   return (
     <main>
-     <div className='flex justify-center'>
-      <div className='max-w-5xl mt-6 mb-6 border-2 p-8 rounded-2xl w-5xl bg-white text-black max-sm:w-md ml-6 mr-6 max-md:w-xl'>
+     <div className='flex flex-col min-h-screen'>
+      <div className='flex-1 flex justify-center items-start'>
+      <div className='mt-6 mb-6 border-2 p-8 rounded-2xl w-5xl bg-white text-black max-sm:w-md ml-6 mr-6 max-md:w-xl'>
       <p className='text-4xl font-bold'>Portfolio</p>
       <div className='border-b-purple-500 border-b-6 w-40 rounded-3xl mt-2 mb-2'></div>
       <div className='grid grid-cols-3 gap-4 mt-2 max-sm:grid-cols-1 max-md:grid-cols-1'>
@@ -70,6 +71,7 @@ const page = () => {
       </div>
       </div>
       </div> 
+      </div>
     </main>
   )
 }
