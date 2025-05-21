@@ -72,16 +72,22 @@ const page = () => {
           {/* Box Skills */}
         <div className={`flex w-5xl justify-center mx-auto space-x-2 max-sm:flex-col max-sm:w-4/5 max-md:flex-col max-md:w-xl ${outfit.className}`}>
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
-          <p className="text-3xl font-bold mb-2">My skills</p>
+          <p className="text-3xl font-bold mb-2">Programming Languages</p>
           <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
-            <div className="flex space-y-4 max-sm:flex-wrap max-sm:gap-2 ">
-            <Image src='/icon/unity.png' width={48} height={48} alt={"logo-unity"} />
+            <div className="flex space-x-2 max-sm:flex-wrap max-sm:gap-2 ">
             <Image src='/icon/c-sharp.png' width={48} height={48} alt={"logo-C#"} />
             <Image src='/icon/html.png' width={48} height={48} alt={"logo-html"} />
             <Image src='/icon/css-3.png' width={48} height={48} alt={"logo-css"} />
             <Image src='/icon/js.png' width={48} height={48} alt={"logo-javascript"} />
             <Image src='/icon/python.png' width={48} height={48} alt={"logo-python"} />
-            <Image src='/icon/Tailwind CSS.png' width={48} height={48} alt="logo-tailwind"/>
+            </div>
+          </div>
+          <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
+          <p className="text-3xl font-bold mb-2">Technological Tools</p>
+          <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
+            <div className="flex space-x-2 max-sm:flex-wrap max-sm:gap-2 ">
+            <Image src='/icon/unity.png' width={48} height={48} alt={"logo-unity"} />
+            <Image src='/icon/Tailwind CSS.png' width={48} height={48} alt="logo-tailwind" />
             </div>
           </div>
         </div>
