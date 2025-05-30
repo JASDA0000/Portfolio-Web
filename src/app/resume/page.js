@@ -1,6 +1,7 @@
 import React from "react";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
+import MonthCounter from "../../../components/MonthCouter";
 const outfit = Outfit({ subsets: ["latin"] });
 const page = () => {
   return (
@@ -14,32 +15,47 @@ const page = () => {
             <span className="mr-2 material-symbols-outlined">work</span>
             <p className="text-3xl font-bold">Experienced</p>
           </div>
-          <ul className="list-disc ml-5">
-            <li className="text-xl font-bold">Teaching (Intern)</li>
-          </ul>
-          <p className="text-lg">Samutprakan Technical College</p>
-          <p className="text-lg  text-purple-500">May 2024 - Feb 2025</p>
+            <a href="https://www.inet.co.th/th" target="_blank" rel="noopener noreferrer" className="text-xl font-bold  hover:text-[#785bff] cursor-pointer">Internet Thailand Public Company Limited</a>
+          <p className="text-lg">System Engineering</p>
+          <MonthCounter startMonth={6} startYear={2025}/>
           <p className="text-lg text-pretty">
-            Teaching in the subject of object-oriented programming (OOP) using
-            C#
+
           </p>
           <p className="text-lg">
-            Teaching in the subject of computer programming with Python,using
-            the Tkinter and CustomTkinter frameworks.
+            
           </p>
-          <ul className="list-disc ml-5">
-            <li className="text-xl font-bold">WordPress (Intern)</li>
+          {/* item */}
+          <a href="https://www.sptc.ac.th/" target="_blank" rel="noopener noreferrer" className="text-xl font-bold  hover:text-[#785bff] cursor-pointer">Samutprakan Technical College</a>
+          <p className="text-lg">Teaching (Intern)</p>
+          <MonthCounter startMonth={5} startYear={2024} endMonth={2} endYear={2025}/>
+          <ul className="list-disc pl-5">
+            <li className="">
+            Teaching in the subject of object-oriented programming (OOP) using C#.
+            </li>
+            <li>
+              Teaching in the subject of computer programming with Python,using
+            the Tkinter and CustomTkinter frameworks.
+            </li>
           </ul>
-          <p className="text-lg">Ideaconnect </p>
-          <p className="text-lg text-purple-500">May 2023 - Jun 2023</p>
-          <p className="text-lg">Design UI for website.</p>
-          <ul className="list-disc ml-5">
-            <li className="text-xl font-bold">IT Support (Intern)</li>
-          </ul>
-          <p className="text-lg">Surat IT World</p>
-          <p className="text-lg text-purple-500">May 2020 - Aug 2020</p>
-          <p className="text-lg">Computer Repair.</p>
-          <p className="text-lg">Software Installtion.</p>
+          <a href="https://www.ideaconnect.co.th/" target="_blank" rel="noopener noreferrer" className="text-xl font-bold  hover:text-[#785bff] cursor-pointer">Ideaconnect</a>
+          <p className="text-lg">WordPress (Intern)</p>
+          <MonthCounter startMonth={5} startYear={2023} endMonth={6} endYear={2023}/>
+          <ul className="list-disc pl-5">
+            <li className="">
+            Design UI for website.
+            </li>
+            </ul>
+            <a href="https://www.facebook.com/p/%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-100069580463622/?locale=el_GR" target="_blank" rel="noopener noreferrer" className="text-xl font-bold  hover:text-[#785bff] cursor-pointer">Surat IT World</a>
+          <p className="text-lg">IT Support (Intern)</p>
+          <MonthCounter startMonth={5} startYear={2020} endMonth={9} endYear={2020}/>
+          <ul className="list-disc pl-5">
+            <li className="">
+            Computer Repair.
+            </li>
+            <li>
+              Software Installtion.
+            </li>
+            </ul>
           </div>
             {/* Education */}
           <div className="mt-6 mb-6 border-2 p-8 rounded-3xl w-full  max-md:mt-2 bg-white text-black">
@@ -80,6 +96,7 @@ const page = () => {
             <Image src='/icon/css-3.png' width={48} height={48} alt={"logo-css"} />
             <Image src='/icon/js.png' width={48} height={48} alt={"logo-javascript"} />
             <Image src='/icon/python.png' width={48} height={48} alt={"logo-python"} />
+            <Image src='/icon/new-php-logo.png' width={80} height={48} alt={"logo-php"} />
             </div>
           </div>
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
