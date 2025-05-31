@@ -91,20 +91,20 @@ const page = () => {
           <p className="text-3xl font-bold mb-2">Programming Languages</p>
           <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
             <div className="flex space-x-2 max-sm:flex-wrap max-sm:gap-2 ">
-            <Image src='/icon/c-sharp.png' width={48} height={48} alt={"logo-C#"} />
-            <Image src='/icon/html.png' width={48} height={48} alt={"logo-html"} />
-            <Image src='/icon/css-3.png' width={48} height={48} alt={"logo-css"} />
-            <Image src='/icon/js.png' width={48} height={48} alt={"logo-javascript"} />
-            <Image src='/icon/python.png' width={48} height={48} alt={"logo-python"} />
-            <Image src='/icon/new-php-logo.png' width={80} height={48} alt={"logo-php"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width={48} height={48} alt={"logo-C#"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" width={48} height={48} alt={"logo-html"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width={48} height={48} alt={"logo-css"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width={48} height={48} alt={"logo-javascript"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width={48} height={48} alt={"logo-python"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width={48} height={48} alt={"logo-php"} />
             </div>
           </div>
           <div className="w-full mt-2 mb-6 border-2 p-8 rounded-3xl bg-white text-black ">
           <p className="text-3xl font-bold mb-2">Technological Tools</p>
           <div className="border-b-purple-500 border-b-6 w-35 rounded-3xl mt-2 mb-2"></div>
             <div className="flex space-x-2 max-sm:flex-wrap max-sm:gap-2 ">
-            <Image src='/icon/unity.png' width={48} height={48} alt={"logo-unity"} />
-            <Image src='/icon/Tailwind CSS.png' width={48} height={48} alt="logo-tailwind" />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" width={48} height={48} alt={"logo-unity"} />
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width={48} height={48} alt="logo-tailwind" />
             </div>
           </div>
         </div>

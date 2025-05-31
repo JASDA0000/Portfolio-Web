@@ -45,7 +45,11 @@ const Navbar = () => {
         {navLinks.map((link) => 
           <Link key={link.path}
           href={link.path}
-          className={`text-lg font-bold ${pathname === link.path ? "bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent  " : ""}`} >
+          className={`text-lg font-bold transition-all duration-300
+    ${pathname === link.path
+      ? "bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
+      : "hover:bg-gradient-to-r hover:from-cyan-400 hover:via-teal-400 hover:to-green-500 hover:bg-clip-text hover:text-transparent"
+    }`} >
             {link.name}
           </Link>
         )}
